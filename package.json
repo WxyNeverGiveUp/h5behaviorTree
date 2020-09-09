@@ -9,6 +9,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "behavior3js": "^0.2.2"
   }
 }
