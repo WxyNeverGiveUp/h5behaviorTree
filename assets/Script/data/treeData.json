@@ -1,0 +1,145 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "347bf094-1367-4190-8dbe-b93c9b921baf",
+  "title": "A behavior tree",
+  "description": "",
+  "root": "9dc745a3-7541-4aaf-83a4-8af51cee607c",
+  "properties": {},
+  "nodes": {
+    "92df6a08-d15f-4fd3-821f-2b42b35b0f7c": {
+      "id": "92df6a08-d15f-4fd3-821f-2b42b35b0f7c",
+      "name": "Sequence",
+      "title": "date",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -216,
+        "y": 252
+      },
+      "children": [
+        "78421a0b-5104-4bcf-b8d7-3b6dcc700d4a",
+        "14cbf494-cb38-4d7e-81bf-513c6d7e2125",
+        "f67b4445-d5e1-4a41-8062-0f3dde052807"
+      ]
+    },
+    "26b10167-d2c9-488f-a75b-9ad436dac9d8": {
+      "id": "26b10167-d2c9-488f-a75b-9ad436dac9d8",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 204,
+        "y": 252
+      },
+      "children": [
+        "bd8a09b1-0da7-42d3-bd83-47faae8d4bb7"
+      ]
+    },
+    "14cbf494-cb38-4d7e-81bf-513c6d7e2125": {
+      "id": "14cbf494-cb38-4d7e-81bf-513c6d7e2125",
+      "name": "toGround",
+      "title": "toGround",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -216,
+        "y": 384
+      }
+    },
+    "bd8a09b1-0da7-42d3-bd83-47faae8d4bb7": {
+      "id": "bd8a09b1-0da7-42d3-bd83-47faae8d4bb7",
+      "name": "goHome",
+      "title": "goHome",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 204,
+        "y": 384
+      }
+    },
+    "f67b4445-d5e1-4a41-8062-0f3dde052807": {
+      "id": "f67b4445-d5e1-4a41-8062-0f3dde052807",
+      "name": "playBall",
+      "title": "playBall",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 384
+      }
+    },
+    "9dc745a3-7541-4aaf-83a4-8af51cee607c": {
+      "id": "9dc745a3-7541-4aaf-83a4-8af51cee607c",
+      "name": "Priority",
+      "title": "early",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "children": [
+        "92df6a08-d15f-4fd3-821f-2b42b35b0f7c",
+        "26b10167-d2c9-488f-a75b-9ad436dac9d8"
+      ]
+    },
+    "78421a0b-5104-4bcf-b8d7-3b6dcc700d4a": {
+      "id": "78421a0b-5104-4bcf-b8d7-3b6dcc700d4a",
+      "name": "isEarly",
+      "title": "是否下班早",
+      "description": "isEarly",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 384
+      }
+    }
+  },
+  "display": {
+    "camera_x": 840,
+    "camera_y": 485.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "toGround",
+      "category": "action",
+      "title": "toGround",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "playBall",
+      "category": "action",
+      "title": "playBall",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "goHome",
+      "category": "action",
+      "title": "goHome",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "isEarly",
+      "category": "condition",
+      "title": "是否下班早",
+      "description": "isEarly",
+      "properties": {}
+    }
+  ]
+}
